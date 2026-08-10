@@ -1,0 +1,101 @@
+[
+  {
+    "player_count": 5,
+    "teams": {
+      "townsfolk": 3,
+      "outsiders": 0,
+      "minions": 1,
+      "demons": 1
+    }
+  },
+  {
+    "player_count": 6,
+    "teams": {
+      "townsfolk": 3,
+      "outsiders": 1,
+      "minions": 1,
+      "demons": 1
+    }
+  },
+  {
+    "player_count": 7,
+    "teams": {
+      "townsfolk": 5,
+      "outsiders": 0,
+      "minions": 1,
+      "demons": 1
+    }
+  },
+  {
+    "player_count": 8,
+    "teams": {
+      "townsfolk": 5,
+      "outsiders": 1,
+      "minions": 1,
+      "demons": 1
+    }
+  },
+  {
+    "player_count": 9,
+    "teams": {
+      "townsfolk": 5,
+      "outsiders": 2,
+      "minions": 1,
+      "demons": 1
+    }
+  },
+  {
+    "player_count": 10,
+    "teams": {
+      "townsfolk": 7,
+      "outsiders": 0,
+      "minions": 2,
+      "demons": 1
+    }
+  },
+  {
+    "player_count": 11,
+    "teams": {
+      "townsfolk": 7,
+      "outsiders": 1,
+      "minions": 2,
+      "demons": 1
+    }
+  },
+  {
+    "player_count": 12,
+    "teams": {
+      "townsfolk": 7,
+      "outsiders": 2,
+      "minions": 2,
+      "demons": 1
+    }
+  },
+  {
+    "player_count": 13,
+    "teams": {
+      "townsfolk": 9,
+      "outsiders": 0,
+      "minions": 3,
+      "demons": 1
+    }
+  },
+  {
+    "player_count": 14,
+    "teams": {
+      "townsfolk": 9,
+      "outsiders": 1,
+      "minions": 3,
+      "demons": 1
+    }
+  },
+  {
+    "player_count": 15,
+    "teams": {
+      "townsfolk": 9,
+      "outsiders": 2,
+      "minions": 3,
+      "demons": 1
+    }
+  }
+]

@@ -1,0 +1,678 @@
+[
+  {
+    "character_id": "washerwoman",
+    "name_en": "Washerwoman",
+    "name_cs": "Pradlena",
+    "team": "townsfolk",
+
+    "ability_en": "On the first night, you learn that one of two players is a specific Townsfolk character.",
+    "ability_cs": "První noc se dozvíš, že jeden ze dvou hráčů je konkrétní Měšťan.",
+
+    "tags": [
+      "night_action",
+      "information",
+      "first_night"
+    ],
+
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+
+  {
+    "character_id": "librarian",
+    "name_en": "Librarian",
+    "name_cs": "Knihovník",
+    "team": "townsfolk",
+
+    "ability_en": "On the first night, you learn that one of two players is a specific Outsider character.",
+    "ability_cs": "První noc se dozvíš, že jeden ze dvou hráčů je konkrétní Vnější postava.",
+
+    "tags": [
+      "night_action",
+      "information",
+      "first_night"
+    ],
+
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+
+  {
+    "character_id": "investigator",
+    "name_en": "Investigator",
+    "name_cs": "Vyšetřovatel",
+    "team": "townsfolk",
+
+    "ability_en": "On the first night, you learn that one of two players is a specific Minion character.",
+    "ability_cs": "První noc se dozvíš, že jeden ze dvou hráčů je konkrétní Přisluhovač.",
+
+    "tags": [
+      "night_action",
+      "information",
+      "first_night"
+    ],
+
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+
+  {
+    "character_id": "chef",
+    "name_en": "Chef",
+    "name_cs": "Kuchař",
+    "team": "townsfolk",
+
+    "ability_en": "On the first night, you learn the number of pairs of neighbouring evil players.",
+    "ability_cs": "První noc se dozvíš počet dvojic sousedících zlých hráčů.",
+
+    "tags": [
+      "night_action",
+      "information",
+      "first_night"
+    ],
+
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+
+  {
+    "character_id": "empath",
+    "name_en": "Empath",
+    "name_cs": "Empat",
+    "team": "townsfolk",
+
+    "ability_en": "Each night, you learn how many of your alive neighbours are evil.",
+    "ability_cs": "Každou noc se dozvíš, kolik z tvých 2 živých sousedů je zlých.",
+
+    "tags": [
+      "night_action",
+      "information"
+    ],
+
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+
+  {
+    "character_id": "fortuneteller",
+    "name_en": "Fortune Teller",
+    "name_cs": "Vědma",
+    "team": "townsfolk",
+
+    "ability_en": "Each night, you choose two players and learn if one is the Demon.",
+    "ability_cs": "Každou noc vybereš dva hráče a zjistíš, zda je mezi nimi Démon.",
+
+    "tags": [
+      "night_action",
+      "information"
+    ],
+
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+
+  {
+    "character_id": "undertaker",
+    "name_en": "Undertaker",
+    "name_cs": "Hrobník",
+    "team": "townsfolk",
+
+    "ability_en": "Each night, you learn the character of the player who was executed today.",
+    "ability_cs": "Každou noc se dozvíš postavu hráče, který byl dnes popraven.",
+
+    "tags": [
+      "night_action",
+      "information"
+    ],
+
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+
+  {
+    "character_id": "monk",
+    "name_en": "Monk",
+    "name_cs": "Mnich",
+    "team": "townsfolk",
+
+    "ability_en": "Each night, you choose a player to protect from the Demon tonight.",
+    "ability_cs": "Každou noc vybereš hráče, kterého ochráníš před Démonem.",
+
+    "tags": [
+      "night_action",
+      "protection"
+    ],
+
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+
+  {
+    "character_id": "ravenkeeper",
+    "name_en": "Ravenkeeper",
+    "name_cs": "Strážkyně krkavců",
+    "team": "townsfolk",
+
+    "ability_en": "If you die at night, you wake and learn a player's character.",
+    "ability_cs": "Pokud v noci zemřeš, probudíš se a zjistíš postavu jednoho hráče.",
+
+    "tags": [
+      "night_action",
+      "information",
+      "death_trigger"
+    ],
+
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+
+  {
+    "character_id": "virgin",
+    "name_en": "Virgin",
+    "name_cs": "Panna",
+    "team": "townsfolk",
+
+    "ability_en": "The first time you are nominated by a Townsfolk player, the nominee is executed immediately.",
+    "ability_cs": "Poprvé, když tě nominuje Měšťan, je nominovaný okamžitě popraven.",
+
+    "tags": [
+      "passive",
+      "execution"
+    ],
+
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+
+  {
+    "character_id": "slayer",
+    "name_en": "Slayer",
+    "name_cs": "Zabiják",
+    "team": "townsfolk",
+
+    "ability_en": "Once per game during the day, choose a player. If they are the Demon, they die.",
+    "ability_cs": "Jednou za hru během dne vyber hráče. Pokud je to Démon, zemře.",
+
+    "tags": [
+      "day_action",
+      "attack"
+    ],
+
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+
+  {
+    "character_id": "soldier",
+    "name_en": "Soldier",
+    "name_cs": "Voják",
+    "team": "townsfolk",
+
+    "ability_en": "You are safe from the Demon.",
+    "ability_cs": "Jsi chráněn před Démonem.",
+
+    "tags": [
+      "passive",
+      "protection"
+    ],
+
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+
+  {
+    "character_id": "mayor",
+    "name_en": "Mayor",
+    "name_cs": "Starosta",
+    "team": "townsfolk",
+
+    "ability_en": "If only three players live and no execution occurs, good wins. You might survive a Demon attack.",
+    "ability_cs": "Pokud žijí pouze tři hráči a nedojde k popravě, dobro vyhraje. Možná přežiješ útok Démona.",
+
+    "tags": [
+      "passive",
+      "victory_condition"
+    ],
+
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+
+  {
+    "character_id": "butler",
+    "name_en": "Butler",
+    "name_cs": "Sluha",
+    "team": "outsider",
+
+    "ability_en": "Each night, choose a player. You must vote if they vote.",
+    "ability_cs": "Každou noc vybereš hráče. Musíš hlasovat pouze tehdy, pokud hlasuje on.",
+
+    "tags": [
+      "night_action",
+      "restriction"
+    ],
+
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+
+  {
+    "character_id": "drunk",
+    "name_en": "Drunk",
+    "name_cs": "Opilec",
+    "team": "outsider",
+
+    "ability_en": "You think you are a Townsfolk character, but you are not. Your ability does not work.",
+    "ability_cs": "Myslíš si, že jsi Měšťan, ale nejsi. Tvoje schopnost nefunguje.",
+
+    "tags": [
+      "passive",
+      "false_identity"
+    ],
+
+    "setup_modifier": {
+      "add": {
+        "townsfolk": 1
+      },
+      "remove": {}
+    },
+
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+
+  {
+    "character_id": "recluse",
+    "name_en": "Recluse",
+    "name_cs": "Samotář",
+    "team": "outsider",
+
+    "ability_en": "You may register as evil and as a different character type.",
+    "ability_cs": "Můžeš být vyhodnocen jako zlý a jako jiný typ postavy.",
+
+    "tags": [
+      "passive",
+      "false_registration"
+    ],
+
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+
+  {
+    "character_id": "saint",
+    "name_en": "Saint",
+    "name_cs": "Světec",
+    "team": "outsider",
+
+    "ability_en": "If you are executed, good loses the game.",
+    "ability_cs": "Pokud jsi popraven, dobro prohraje hru.",
+
+    "tags": [
+      "passive",
+      "victory_condition"
+    ],
+
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+
+   {
+    "character_id": "poisoner",
+    "name_en": "Poisoner",
+    "name_cs": "Travič",
+    "team": "minion",
+
+    "ability_en": "Each night, choose a player. They are poisoned tonight and tomorrow day.",
+    "ability_cs": "Každou noc vyber hráče. Je otrávený tuto noc a následující den.",
+
+    "tags": [
+      "night_action",
+      "disruption"
+    ],
+
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+
+  {
+    "character_id": "spy",
+    "name_en": "Spy",
+    "name_cs": "Špeh",
+    "team": "minion",
+
+    "ability_en": "You see the Grimoire. You may register as good and as a different character type.",
+    "ability_cs": "Vidíš Grimoár. Můžeš být vyhodnocen jako hodný a jako jiný typ postavy.",
+
+    "tags": [
+      "passive",
+      "information",
+      "false_registration"
+    ],
+
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+
+  {
+    "character_id": "scarletwoman",
+    "name_en": "Scarlet Woman",
+    "name_cs": "Šarlatová žena",
+    "team": "minion",
+
+    "ability_en": "If the Demon dies while there are five or more players alive, you become the Demon.",
+    "ability_cs": "Pokud Démon zemře a žije alespoň pět hráčů, staneš se Démonem.",
+
+    "tags": [
+      "passive",
+      "demon_transfer"
+    ],
+
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+
+  {
+    "character_id": "baron",
+    "name_en": "Baron",
+    "name_cs": "Baron",
+    "team": "minion",
+
+    "ability_en": "There are extra Outsiders in play. Reduce the number of Townsfolk.",
+    "ability_cs": "Ve hře je více Vnějších postav. Počet Měšťanů je snížen.",
+
+    "tags": [
+      "passive",
+      "setup_modifier"
+    ],
+
+    "setup_modifier": {
+      "add": {
+        "outsiders": 2
+      },
+      "remove": {
+        "townsfolk": 2
+      }
+    },
+
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+
+  {
+    "character_id": "imp",
+    "name_en": "Imp",
+    "name_cs": "Čert",
+    "team": "demon",
+
+    "ability_en": "Each night, choose a player. They die. If you choose yourself, a Minion becomes the new Demon.",
+    "ability_cs": "Každou noc vyber hráče. Zemře. Pokud vybereš sebe, Minion se stane novým Démonem.",
+
+    "tags": [
+      "night_action",
+      "attack"
+    ],
+
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+
+  {
+    "character_id": "scapegoat",
+    "name_en": "",
+    "name_cs": "",
+    "team": "traveller",
+
+    "ability_en": "",
+    "ability_cs": "",
+
+    "tags": [
+    ],
+
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+  
+  {
+    "character_id": "gunslinger",
+    "name_en": "",
+    "name_cs": "",
+    "team": "traveller",
+
+    "ability_en": "",
+    "ability_cs": "",
+
+    "tags": [
+    ],
+
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+
+  {
+    "character_id": "beggar",
+    "name_en": "",
+    "name_cs": "",
+    "team": "traveller",
+
+    "ability_en": "",
+    "ability_cs": "",
+
+    "tags": [
+    ],
+
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+
+  {
+    "character_id": "bureaucrat",
+    "name_en": "",
+    "name_cs": "",
+    "team": "traveller",
+
+    "ability_en": "",
+    "ability_cs": "",
+
+    "tags": [
+    ],
+
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+
+  {
+    "character_id": "thief",
+    "name_en": "",
+    "name_cs": "",
+    "team": "traveller",
+
+    "ability_en": "",
+    "ability_cs": "",
+
+    "tags": [
+    ],
+
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  }
+]
