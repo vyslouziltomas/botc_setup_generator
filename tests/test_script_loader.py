@@ -5,7 +5,7 @@ def test_script_loader():
 
     loaded_characters = character_loader()
 
-    script = script_loader("scripts/trouble_brewing.json", loaded_characters)
+    script = script_loader("scripts/Potíže Přicházejí.json", loaded_characters)
 
     assert len(script.townsfolk) == 13
     assert len(script.outsiders) == 4

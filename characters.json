@@ -674,5 +674,1207 @@
       "first": null,
       "other": null
     }
+  },
+
+
+  {
+    "character_id": "grandmother",
+    "name_en": "Grandmother",
+    "name_cs": "Babička",
+    "team": "townsfolk",
+
+    "ability_en": "You start knowing one good player and their character. If the Demon kills that player, you die too.",
+    "ability_cs": "Na začátku znáš jednoho dobrého hráče a jeho postavu. Pokud ho zabije Démon, zemřeš také.",
+
+    "tags": [
+      "information",
+      "first_night",
+      "death_trigger"
+    ],
+
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+
+  {
+    "character_id": "sailor",
+    "name_en": "Sailor",
+    "name_cs": "Námořník",
+    "team": "townsfolk",
+
+    "ability_en": "Each night, choose a living player. Either you or they become drunk until dusk. You cannot die while sober.",
+    "ability_cs": "Každou noc vybereš živého hráče. Ty nebo on jste do soumraku opilí. Dokud jsi střízlivý, nemůžeš zemřít.",
+
+    "tags": [
+      "night_action",
+      "drunkenness",
+      "protection"
+    ],
+
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+
+  {
+    "character_id": "chambermaid",
+    "name_en": "Chambermaid",
+    "name_cs": "Komorná",
+    "team": "townsfolk",
+
+    "ability_en": "Each night, choose two other living players. You learn how many of them woke tonight because of their ability.",
+    "ability_cs": "Každou noc vybereš dva jiné živé hráče. Dozvíš se, kolik z nich se tuto noc probudilo kvůli své schopnosti.",
+
+    "tags": [
+      "night_action",
+      "information"
+    ],
+
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+
+  {
+    "character_id": "exorcist",
+    "name_en": "Exorcist",
+    "name_cs": "Exorcista",
+    "team": "townsfolk",
+
+    "ability_en": "Each night except the first, choose a player different from last night. If they are the Demon, they learn who you are and do not act tonight.",
+    "ability_cs": "Každou noc kromě první vybereš hráče jiného než minulou noc. Pokud je to Démon, zjistí, kdo jsi, a tuto noc nejedná.",
+
+    "tags": [
+      "night_action",
+      "disruption"
+    ],
+
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+
+  {
+    "character_id": "innkeeper",
+    "name_en": "Innkeeper",
+    "name_cs": "Hostinský",
+    "team": "townsfolk",
+
+    "ability_en": "Each night except the first, choose two players. They cannot die tonight, but one of them becomes drunk until dusk.",
+    "ability_cs": "Každou noc kromě první vybereš dva hráče. Tuto noc nemohou zemřít, ale jeden z nich je do soumraku opilý.",
+
+    "tags": [
+      "night_action",
+      "protection",
+      "drunkenness"
+    ],
+
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+
+  {
+    "character_id": "gambler",
+    "name_en": "Gambler",
+    "name_cs": "Gambler",
+    "team": "townsfolk",
+
+    "ability_en": "Each night except the first, choose a player and guess their character. If your guess is wrong, you die.",
+    "ability_cs": "Každou noc kromě první vybereš hráče a tipneš jeho postavu. Pokud se spleteš, zemřeš.",
+
+    "tags": [
+      "night_action",
+      "information",
+      "death_risk"
+    ],
+
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+
+  {
+    "character_id": "gossip",
+    "name_en": "Gossip",
+    "name_cs": "Drbna",
+    "team": "townsfolk",
+
+    "ability_en": "Each day, you may make a public statement. If it is true, a player dies that night.",
+    "ability_cs": "Každý den můžeš veřejně pronést tvrzení. Pokud je pravdivé, tuto noc jeden hráč zemře.",
+
+    "tags": [
+      "day_action",
+      "death_trigger"
+    ],
+
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+
+  {
+    "character_id": "courtier",
+    "name_en": "Courtier",
+    "name_cs": "Lichotník",
+    "team": "townsfolk",
+
+    "ability_en": "Once per game at night, choose a character. That character is drunk for three nights and three days.",
+    "ability_cs": "Jednou za hru v noci vybereš postavu. Tato postava je opilá po tři noci a tři dny.",
+
+    "tags": [
+      "night_action",
+      "drunkenness",
+      "once_per_game"
+    ],
+
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+
+  {
+    "character_id": "professor",
+    "name_en": "Professor",
+    "name_cs": "Profesor",
+    "team": "townsfolk",
+
+    "ability_en": "Once per game at night except the first, choose a dead player. If they are a Townsfolk, they return to life.",
+    "ability_cs": "Jednou za hru v noci kromě první vybereš mrtvého hráče. Pokud je Měšťan, vrátí se k životu.",
+
+    "tags": [
+      "night_action",
+      "resurrection",
+      "once_per_game"
+    ],
+
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+
+  {
+    "character_id": "minstrel",
+    "name_en": "Minstrel",
+    "name_cs": "Pěvec",
+    "team": "townsfolk",
+
+    "ability_en": "When a Minion dies by execution, all other non-Traveller players are drunk until dusk the following day.",
+    "ability_cs": "Když Přisluhovač zemře popravou, všichni ostatní hráči kromě Pocestných jsou opilí až do soumraku následujícího dne.",
+
+    "tags": [
+      "passive",
+      "execution_trigger",
+      "drunkenness"
+    ],
+
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+
+  {
+    "character_id": "tealady",
+    "name_en": "Tea Lady",
+    "name_cs": "Čajová dáma",
+    "team": "townsfolk",
+
+    "ability_en": "If both of your living neighbours are good, neither of them can die.",
+    "ability_cs": "Pokud jsou oba tvoji živí sousedé dobří, žádný z nich nemůže zemřít.",
+
+    "tags": [
+      "passive",
+      "protection"
+    ],
+
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+
+  {
+    "character_id": "pacifist",
+    "name_en": "Pacifist",
+    "name_cs": "Pacifista",
+    "team": "townsfolk",
+
+    "ability_en": "Good players who are executed may survive.",
+    "ability_cs": "Dobří hráči, kteří jsou popraveni, mohou přežít.",
+
+    "tags": [
+      "passive",
+      "protection",
+      "execution"
+    ],
+
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+
+  {
+    "character_id": "fool",
+    "name_en": "Fool",
+    "name_cs": "Šašek",
+    "team": "townsfolk",
+
+    "ability_en": "The first time you would die, you remain alive instead.",
+    "ability_cs": "Když máš poprvé zemřít, místo toho zůstaneš naživu.",
+
+    "tags": [
+      "passive",
+      "protection",
+      "once_per_game"
+    ],
+
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+
+  {
+    "character_id": "tinker",
+    "name_en": "Tinker",
+    "name_cs": "Dráteník",
+    "team": "outsider",
+
+    "ability_en": "The Storyteller may cause you to die at any time.",
+    "ability_cs": "Vypravěč tě může kdykoliv nechat zemřít.",
+
+    "tags": [
+      "passive",
+      "death_trigger"
+    ],
+
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+
+  {
+    "character_id": "moonchild",
+    "name_en": "Moonchild",
+    "name_cs": "Dítě měsíce",
+    "team": "outsider",
+
+    "ability_en": "When you learn that you died, publicly choose a living player. If they are good, they die that night.",
+    "ability_cs": "Když se dozvíš, že jsi zemřel, veřejně vybereš živého hráče. Pokud je dobrý, tuto noc zemře.",
+
+    "tags": [
+      "death_trigger",
+      "day_action",
+      "attack"
+    ],
+
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+
+  {
+    "character_id": "goon",
+    "name_en": "Goon",
+    "name_cs": "Hňup",
+    "team": "outsider",
+
+    "ability_en": "Each night, the first player who chooses you with their ability becomes drunk until dusk. You become their alignment.",
+    "ability_cs": "Každou noc je první hráč, který tě vybere svou schopností, opilý až do soumraku. Ty získáš jeho příslušnost.",
+
+    "tags": [
+      "night_trigger",
+      "drunkenness",
+      "alignment_change"
+    ],
+
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+
+  {
+    "character_id": "lunatic",
+    "name_en": "Lunatic",
+    "name_cs": "Blázen",
+    "team": "outsider",
+
+    "ability_en": "You believe you are a Demon, but you are not. The real Demon knows who you are and which players you choose at night.",
+    "ability_cs": "Myslíš si, že jsi Démon, ale nejsi. Skutečný Démon ví, kdo jsi a které hráče v noci vybíráš.",
+
+    "tags": [
+      "false_identity",
+      "night_action",
+      "deception"
+    ],
+
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+
+  {
+    "character_id": "godfather",
+    "name_en": "Godfather",
+    "name_cs": "Kmotr",
+    "team": "minion",
+
+    "ability_en": "You start knowing which Outsiders are in play. If an Outsider died during the day, choose a player that night: they die. The setup has one more or one fewer Outsider.",
+    "ability_cs": "Na začátku víš, kteří Podivíni jsou ve hře. Pokud Podivín zemřel během dne, v noci vybereš hráče: zemře. Ve hře je o jednoho Podivína více nebo méně.",
+
+    "tags": [
+      "information",
+      "first_night",
+      "night_action",
+      "attack",
+      "setup_modifier"
+    ],
+
+    "setup_modifier": {
+      "add": {},
+      "remove": {},
+      "special": {
+        "type": "choice",
+        "options": [
+          {
+            "add": {
+              "outsiders": 1
+            },
+            "remove": {
+              "townsfolk": 1
+            }
+          },
+          {
+            "add": {
+              "townsfolk": 1
+            },
+            "remove": {
+              "outsiders": 1
+            }
+          }
+        ]
+      }
+    },
+
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+
+  {
+    "character_id": "devilsadvocate",
+    "name_en": "Devil's Advocate",
+    "name_cs": "Ďáblův advokát",
+    "team": "minion",
+
+    "ability_en": "Each night, choose a living player different from last night. If they are executed tomorrow, they survive.",
+    "ability_cs": "Každou noc vybereš živého hráče jiného než minulou noc. Pokud je zítra popraven, přežije.",
+
+    "tags": [
+      "night_action",
+      "protection",
+      "execution"
+    ],
+
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+
+  {
+    "character_id": "assassin",
+    "name_en": "Assassin",
+    "name_cs": "Nájemný vrah",
+    "team": "minion",
+
+    "ability_en": "Once per game at night except the first, choose a player. They die even if they would normally be protected from death.",
+    "ability_cs": "Jednou za hru v noci kromě první vybereš hráče. Zemře, i kdyby byl za normálních okolností před smrtí chráněn.",
+
+    "tags": [
+      "night_action",
+      "attack",
+      "once_per_game"
+    ],
+
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+
+  {
+    "character_id": "mastermind",
+    "name_en": "Mastermind",
+    "name_cs": "Strůjce",
+    "team": "minion",
+
+    "ability_en": "If the Demon dies by execution and the game would end, play for one more day. If a player is executed that day, their team loses.",
+    "ability_cs": "Pokud Démon zemře popravou a hra by skončila, hraje se ještě jeden den. Pokud je ten den někdo popraven, jeho tým prohrává.",
+
+    "tags": [
+      "passive",
+      "victory_condition",
+      "execution"
+    ],
+
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+
+  {
+    "character_id": "zombuul",
+    "name_en": "Zombuul",
+    "name_cs": "Zombuul",
+    "team": "demon",
+
+    "ability_en": "Each night except the first, if nobody died during the day, choose a player: they die. The first time you die, you remain alive but register as dead.",
+    "ability_cs": "Každou noc kromě první, pokud během dne nikdo nezemřel, vybereš hráče: zemře. Když zemřeš poprvé, zůstáváš naživu, ale jevíš se jako mrtvý.",
+
+    "tags": [
+      "night_action",
+      "attack",
+      "false_registration",
+      "extra_life"
+    ],
+
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+
+  {
+    "character_id": "pukka",
+    "name_en": "Pukka",
+    "name_cs": "Pukka",
+    "team": "demon",
+
+    "ability_en": "Each night, choose a player to poison. The player poisoned on the previous night dies and then becomes healthy.",
+    "ability_cs": "Každou noc vybereš hráče, který bude otráven. Hráč otrávený předchozí noc zemře a poté přestane být otrávený.",
+
+    "tags": [
+      "night_action",
+      "attack",
+      "poisoning"
+    ],
+
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+
+  {
+    "character_id": "shabaloth",
+    "name_en": "Shabaloth",
+    "name_cs": "Shabaloth",
+    "team": "demon",
+
+    "ability_en": "Each night except the first, choose two players: they die. A player you killed on the previous night may return to life.",
+    "ability_cs": "Každou noc kromě první vybereš dva hráče: zemřou. Hráč, kterého jsi zabil minulou noc, může být znovu oživen.",
+
+    "tags": [
+      "night_action",
+      "attack",
+      "resurrection"
+    ],
+
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+
+  {
+    "character_id": "po",
+    "name_en": "Po",
+    "name_cs": "Pó",
+    "team": "demon",
+
+    "ability_en": "Each night except the first, you may choose one player to die. If you chose nobody the last time you acted, choose three players tonight instead.",
+    "ability_cs": "Každou noc kromě první můžeš vybrat jednoho hráče, který zemře. Pokud jsi při svém posledním jednání nikoho nevybral, tuto noc vybereš tři hráče.",
+
+    "tags": [
+      "night_action",
+      "attack",
+      "multi_attack"
+    ],
+
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+
+
+
+  {
+    "character_id": "clockmaker",
+    "name_en": "Clockmaker",
+    "name_cs": "Hodinář",
+    "team": "townsfolk",
+    "ability_en": "At the start of the game, you learn the distance from the Demon to the nearest Minion.",
+    "ability_cs": "Na začátku hry se dozvíš vzdálenost Démona od nejbližšího Přisluhovače.",
+    "tags": ["information", "first_night"],
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+  {
+    "character_id": "dreamer",
+    "name_en": "Dreamer",
+    "name_cs": "Snílek",
+    "team": "townsfolk",
+    "ability_en": "Each night, choose another non-Traveller player. You learn one good and one evil character, one of which is their character.",
+    "ability_cs": "Každou noc vybereš jiného hráče, který není Pocestný. Dozvíš se jednu dobrou a jednu zlou postavu, přičemž jedna z nich je jeho skutečná postava.",
+    "tags": ["night_action", "information"],
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+  {
+    "character_id": "snakecharmer",
+    "name_en": "Snake Charmer",
+    "name_cs": "Zaklínač hadů",
+    "team": "townsfolk",
+    "ability_en": "Each night, choose a living player. If they are the Demon, you exchange characters and alignments and the new Snake Charmer is poisoned.",
+    "ability_cs": "Každou noc vybereš živého hráče. Pokud je Démon, vyměníte si postavy i příslušnost a nový Zaklínač hadů je otrávený.",
+    "tags": ["night_action", "character_change", "alignment_change", "poisoning"],
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+  {
+    "character_id": "mathematician",
+    "name_en": "Mathematician",
+    "name_cs": "Matematik",
+    "team": "townsfolk",
+    "ability_en": "Each night, you learn how many players' abilities have malfunctioned since dawn because of another character's ability.",
+    "ability_cs": "Každou noc se dozvíš, kolika hráčům od úsvitu nefungovala schopnost správně kvůli schopnosti jiné postavy.",
+    "tags": ["night_action", "information"],
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+  {
+    "character_id": "flowergirl",
+    "name_en": "Flowergirl",
+    "name_cs": "Květinářka",
+    "team": "townsfolk",
+    "ability_en": "Each night except the first, you learn whether a Demon voted during the day.",
+    "ability_cs": "Každou noc kromě první se dozvíš, zda během dne hlasoval Démon.",
+    "tags": ["night_action", "information"],
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+  {
+    "character_id": "towncrier",
+    "name_en": "Town Crier",
+    "name_cs": "Městký vyvolávač",
+    "team": "townsfolk",
+    "ability_en": "Each night except the first, you learn whether a Minion nominated during the day.",
+    "ability_cs": "Každou noc kromě první se dozvíš, zda během dne nominoval některý Přisluhovač.",
+    "tags": ["night_action", "information"],
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+  {
+    "character_id": "oracle",
+    "name_en": "Oracle",
+    "name_cs": "Orákulum",
+    "team": "townsfolk",
+    "ability_en": "Each night except the first, you learn how many dead players are evil.",
+    "ability_cs": "Každou noc kromě první se dozvíš, kolik mrtvých hráčů je zlých.",
+    "tags": ["night_action", "information"],
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+  {
+    "character_id": "savant",
+    "name_en": "Savant",
+    "name_cs": "Učenec",
+    "team": "townsfolk",
+    "ability_en": "Each day, you may privately receive two statements from the Storyteller: one is true and one is false.",
+    "ability_cs": "Každý den můžeš od Vypravěče soukromě získat dvě tvrzení: jedno je pravdivé a jedno nepravdivé.",
+    "tags": ["day_action", "information"],
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+  {
+    "character_id": "seamstress",
+    "name_en": "Seamstress",
+    "name_cs": "Švadlena",
+    "team": "townsfolk",
+    "ability_en": "Once per game at night, choose two other players. You learn whether they have the same alignment.",
+    "ability_cs": "Jednou za hru v noci vybereš dva jiné hráče. Dozvíš se, zda mají stejnou příslušnost.",
+    "tags": ["night_action", "information", "once_per_game"],
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+  {
+    "character_id": "philosopher",
+    "name_en": "Philosopher",
+    "name_cs": "Filozof",
+    "team": "townsfolk",
+    "ability_en": "Once per game at night, choose a good character and gain its ability. If that character is already in play, its player becomes drunk.",
+    "ability_cs": "Jednou za hru v noci vybereš dobrou postavu a získáš její schopnost. Pokud už je tato postava ve hře, její hráč se stane opilým.",
+    "tags": ["night_action", "ability_change", "drunkenness", "once_per_game"],
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+  {
+    "character_id": "artist",
+    "name_en": "Artist",
+    "name_cs": "Umělec",
+    "team": "townsfolk",
+    "ability_en": "Once per game during the day, privately ask the Storyteller one yes-or-no question about the game.",
+    "ability_cs": "Jednou za hru během dne položíš Vypravěči soukromě jednu otázku o hře, na kterou lze odpovědět ano nebo ne.",
+    "tags": ["day_action", "information", "once_per_game"],
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+  {
+    "character_id": "juggler",
+    "name_en": "Juggler",
+    "name_cs": "Žonglér",
+    "team": "townsfolk",
+    "ability_en": "On your first day, publicly guess the characters of up to five players. That night, you learn how many guesses were correct.",
+    "ability_cs": "Během svého prvního dne veřejně tipneš postavy až pěti hráčů. V noci se dozvíš, kolik tipů bylo správných.",
+    "tags": ["day_action", "night_action", "information", "first_day"],
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+  {
+    "character_id": "sage",
+    "name_en": "Sage",
+    "name_cs": "Mudrc",
+    "team": "townsfolk",
+    "ability_en": "If the Demon kills you, you learn two players, one of whom is the Demon.",
+    "ability_cs": "Pokud tě zabije Démon, dozvíš se dva hráče, z nichž jeden je Démon.",
+    "tags": ["information", "death_trigger"],
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+  {
+    "character_id": "mutant",
+    "name_en": "Mutant",
+    "name_cs": "Mutant",
+    "team": "outsider",
+    "ability_en": "If you are openly insistent that you are an Outsider, the Storyteller may execute you.",
+    "ability_cs": "Pokud jsi příliš otevřeně přesvědčený o tom, že jsi Podivín, Vypravěč tě může popravit.",
+    "tags": ["madness", "execution"],
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+  {
+    "character_id": "sweetheart",
+    "name_en": "Sweetheart",
+    "name_cs": "Zlatíčko",
+    "team": "outsider",
+    "ability_en": "When you die, one player becomes drunk from that point onward.",
+    "ability_cs": "Když zemřeš, jeden hráč se od té chvíle stane opilým.",
+    "tags": ["death_trigger", "drunkenness"],
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+  {
+    "character_id": "barber",
+    "name_en": "Barber",
+    "name_cs": "Holič",
+    "team": "outsider",
+    "ability_en": "If you die, the Demon may choose two players other than another Demon and make them exchange characters.",
+    "ability_cs": "Pokud zemřeš, Démon může vybrat dva hráče, z nichž žádný není jiný Démon, a nechat je vyměnit si postavy.",
+    "tags": ["death_trigger", "character_change"],
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+  {
+    "character_id": "klutz",
+    "name_en": "Klutz",
+    "name_cs": "Nešika",
+    "team": "outsider",
+    "ability_en": "When you learn that you died, publicly choose a living player. If that player is evil, your team loses.",
+    "ability_cs": "Když se dozvíš, že jsi zemřel, veřejně vybereš živého hráče. Pokud je zlý, tvůj tým prohrává.",
+    "tags": ["death_trigger", "victory_condition"],
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+  {
+    "character_id": "eviltwin",
+    "name_en": "Evil Twin",
+    "name_cs": "Zlé dvojče",
+    "team": "minion",
+    "ability_en": "You and one good player of the opposite alignment know each other. If the good twin is executed, evil wins, and good cannot win while both twins live.",
+    "ability_cs": "Ty a jeden dobrý hráč o sobě navzájem víte. Pokud je dobré dvojče popraveno, zlo vyhrává, a dokud obě dvojčata žijí, dobro nemůže vyhrát.",
+    "tags": ["information", "victory_condition"],
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+  {
+    "character_id": "witch",
+    "name_en": "Witch",
+    "name_cs": "Čarodějnice",
+    "team": "minion",
+    "ability_en": "Each night, choose a player. If they nominate the next day, they die. You lose this ability when only three players remain alive.",
+    "ability_cs": "Každou noc vybereš hráče. Pokud následující den nominuje, zemře. Když zůstanou naživu pouze tři hráči, tuto schopnost ztratíš.",
+    "tags": ["night_action", "attack", "nomination_trigger"],
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+  {
+    "character_id": "cerenovus",
+    "name_en": "Cerenovus",
+    "name_cs": "Cerenovus",
+    "team": "minion",
+    "ability_en": "Each night, choose a player and a good character. Tomorrow they must convincingly claim to be that character or they may be executed.",
+    "ability_cs": "Každou noc vybereš hráče a dobrou postavu. Následující den musí přesvědčivě tvrdit, že je touto postavou, jinak může být popraven.",
+    "tags": ["night_action", "madness", "execution"],
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+  {
+    "character_id": "pithag",
+    "name_en": "Pit-Hag",
+    "name_cs": "Pit-Hag",
+    "team": "minion",
+    "ability_en": "Each night, choose a player and a character that is not currently in play. They become that character. If a Demon is created, deaths that night are arbitrary.",
+    "ability_cs": "Každou noc vybereš hráče a postavu, která právě není ve hře. Tento hráč se jí stane. Pokud je vytvořen Démon, úmrtí této noci jsou libovolná.",
+    "tags": ["night_action", "character_change"],
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+  {
+    "character_id": "fanggu",
+    "name_en": "Fang Gu",
+    "name_cs": "Fang Gu",
+    "team": "demon",
+    "ability_en": "Each night except the first, choose a player to die. The first Outsider you kill becomes an evil Fang Gu and you die instead. There is one extra Outsider in play.",
+    "ability_cs": "Každou noc kromě první vybereš hráče, který zemře. První Podivín, kterého zabiješ, se stane zlým Fang Gu a místo něj zemřeš ty. Ve hře je o jednoho Podivína více.",
+    "tags": ["night_action", "attack", "character_change", "alignment_change", "setup_modifier"],
+    "setup_modifier": {
+      "add": {
+        "outsiders": 1
+      },
+      "remove": {
+        "townsfolk": 1
+      }
+    },
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+  {
+    "character_id": "vigormortis",
+    "name_en": "Vigormortis",
+    "name_cs": "Vigormortis",
+    "team": "demon",
+    "ability_en": "Each night except the first, choose a player to die. Minions you kill keep their abilities and poison a nearby Townsfolk. If possible, setup has one fewer Outsider.",
+    "ability_cs": "Každou noc kromě první vybereš hráče, který zemře. Přisluhovači, které zabiješ, si ponechají schopnost a otráví blízkého Měšťana. Pokud je to možné, ve hře je o jednoho Podivína méně.",
+    "tags": ["night_action", "attack", "poisoning", "setup_modifier"],
+    "setup_modifier": {
+      "add": {},
+      "remove": {},
+      "special": {
+        "type": "conditional",
+        "if_true": {
+          "add": {
+            "townsfolk": 1
+          },
+          "remove": {
+            "outsiders": 1
+          }
+        },
+        "if_false": {
+          "add": {},
+          "remove": {}
+        }
+      }
+    },
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+  {
+    "character_id": "nodashii",
+    "name_en": "No Dashii",
+    "name_cs": "No Dashii",
+    "team": "demon",
+    "ability_en": "Each night except the first, choose a player to die. The nearest Townsfolk on both sides of you are poisoned.",
+    "ability_cs": "Každou noc kromě první vybereš hráče, který zemře. Nejbližší Měšťan po obou tvých stranách je otrávený.",
+    "tags": ["night_action", "attack", "poisoning"],
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+  {
+    "character_id": "vortox",
+    "name_en": "Vortox",
+    "name_cs": "Vortox",
+    "team": "demon",
+    "ability_en": "Each night except the first, choose a player to die. Townsfolk information must be false. If nobody is executed during a day, evil wins.",
+    "ability_cs": "Každou noc kromě první vybereš hráče, který zemře. Informace získané schopnostmi Měšťanů musí být nepravdivé. Pokud během dne není nikdo popraven, zlo vyhrává.",
+    "tags": ["night_action", "attack", "misinformation", "victory_condition"],
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+  {
+    "character_id": "butcher",
+    "name_en": "Butcher",
+    "name_cs": "Řezník",
+    "team": "traveller",
+    "ability_en": "Each day, after the first execution, you may make another nomination.",
+    "ability_cs": "Každý den můžeš po první popravě provést další nominaci.",
+    "tags": ["day_action", "execution"],
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+  {
+    "character_id": "bonecollector",
+    "name_en": "Bone Collector",
+    "name_cs": "Sběratel kostí",
+    "team": "traveller",
+    "ability_en": "Once per game at night except the first, choose a dead player. They regain their ability until dusk.",
+    "ability_cs": "Jednou za hru v noci kromě první vybereš mrtvého hráče. Do soumraku znovu získá svou schopnost.",
+    "tags": ["night_action", "ability_restore", "once_per_game"],
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+  {
+    "character_id": "harlot",
+    "name_en": "Harlot",
+    "name_cs": "Nevěstka",
+    "team": "traveller",
+    "ability_en": "Each night except the first, choose a living player. If they agree, you learn their character, but both of you may die.",
+    "ability_cs": "Každou noc kromě první vybereš živého hráče. Pokud souhlasí, dozvíš se jeho postavu, ale oba můžete zemřít.",
+    "tags": ["night_action", "information", "death_risk"],
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+  {
+    "character_id": "barista",
+    "name_en": "Barista",
+    "name_cs": "Barista",
+    "team": "traveller",
+    "ability_en": "Each night, the Storyteller gives one player one of two benefits until dusk: they are sober, healthy and receive true information, or their ability works twice.",
+    "ability_cs": "Každou noc Vypravěč do soumraku zvýhodní jednoho hráče: buď je střízlivý, zdravý a dostává pravdivé informace, nebo jeho schopnost funguje dvakrát.",
+    "tags": ["night_action", "protection", "ability_boost"],
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+    "night_order": {
+      "first": null,
+      "other": null
+    }
+  },
+  {
+    "character_id": "deviant",
+    "name_en": "Deviant",
+    "name_cs": "Deviant",
+    "team": "traveller",
+    "ability_en": "If the Storyteller considers you funny today, you cannot die from exile.",
+    "ability_cs": "Pokud tě dnes Vypravěč považuje za vtipného, nemůžeš zemřít vyhnanstvím.",
+    "tags": ["passive", "protection"],
+    "setup_modifier": {
+      "add": {},
+      "remove": {}
+    },
+    "night_order": {
+      "first": null,
+      "other": null
+    }
   }
 ]

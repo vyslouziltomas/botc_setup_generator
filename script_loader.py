@@ -15,7 +15,14 @@ def pre_loader():
                 with open(script_path, encoding="utf-8") as soubor:
 
                     pre_loaded = json.load(soubor)
-                    script_name = pre_loaded[0]["name"]
+
+                    if not pre_loaded:
+                        continue
+
+                    if pre_loaded[0].get("id") == "_meta":                    
+                        script_name = pre_loaded[0].get("name", script_path.stem.replace("_", " ").title())                    
+                    else:
+                        script_name = script_path.stem.replace("_", " ").title()
 
                     pre_loaded_scripts.append({"script_name": script_name, "script_path": script_path})
 
@@ -35,24 +42,46 @@ def pre_loader():
 
 def script_loader(script_path, loaded_characters):
 
+    script_path = Path(script_path)
+    
     try:
         with open(script_path, encoding="utf-8") as soubor:
 
             script_data = json.load(soubor)
 
-            meta = script_data[0]
+            if not script_data:
+                print("Datový soubor neobsahuje žádné role.")
+                return None
 
-            script_dict = {
-                "script_id": Path(script_path).stem,
-                "script_name": meta["name"],
-                "script_author": meta["author"],
-                "townsfolk": [],
-                "outsiders": [],
-                "minions": [],
-                "demons": []
-            }
+            if script_data[0].get("id") == "_meta":
 
-            for role_data in script_data[1:]:
+                meta = script_data[0]
+
+                script_dict = {
+                    "script_id": Path(script_path).stem,
+                    "script_name": meta.get("name", script_path.stem.replace("_", " ").title()),
+                    "script_author": meta.get("author"),
+                    "townsfolk": [],
+                    "outsiders": [],
+                    "minions": [],
+                    "demons": []
+                }
+                roles_data = script_data[1:]
+                
+            else:
+                script_dict = {
+                    "script_id": Path(script_path).stem,
+                    "script_name": Path(script_path).stem.replace("_", " ").title(),
+                    "script_author": None,
+                    "townsfolk": [],
+                    "outsiders": [],
+                    "minions": [],
+                    "demons": []
+                }
+                roles_data = script_data
+
+
+            for role_data in roles_data:
 
                 role_id = role_data["id"]
                 character = loaded_characters.get(role_id)
@@ -74,7 +103,8 @@ def script_loader(script_path, loaded_characters):
                     script_dict["demons"].append(character)
 
             return Script(script_dict)
-        
+
+
     except FileNotFoundError:
         return None
     
