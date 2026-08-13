@@ -54,7 +54,7 @@ def test_drunk_modifier():
             for character in generated_setup.generated_characters:
                 assert character.character_id != "drunk"
 
-            assert "Jeden Měšťan je Opilec." in generated_setup.message
+            assert "Jeden měšťan je Opilec." in generated_setup.message
             assert len(generated_setup.teams["townsfolk"]) in (8, 10)
     
     assert drunk_spotted

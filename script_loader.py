@@ -2,10 +2,9 @@ import json
 from pathlib import Path
 from script import Script
 
-path_folder = Path("scripts")
-
 def pre_loader():
 
+    path_folder = Path("scripts")
     pre_loaded_scripts = []
 
     for script_path in path_folder.iterdir():

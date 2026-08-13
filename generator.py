@@ -164,7 +164,7 @@ def generate_setup(script, player_setup):
     if drunk:
         generated_characters.remove(drunk)
         generated_teams["outsiders"].remove(drunk)
-        message.append("Jeden Měšťan je Opilec.")
+        message.append("Jeden měšťan je Opilec.")
 
     # Demon musí mít vždy tři platné bluffy.
     if len(available_bluffs) < 3:
