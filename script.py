@@ -8,6 +8,9 @@ class Script:
         self.outsiders = script["outsiders"]
         self.minions = script["minions"]
         self.demons = script["demons"]
+        self.travellers = script["travellers"]
+        self.fabled = script["fabled"]
+        self.loric = script["loric"]
 
     def __str__(self):
         return self.script_name

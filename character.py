@@ -6,6 +6,7 @@ class Character:
         self.name_cs = data["name_cs"]
         self.team = data["team"]
         self.setup_modifier = data["setup_modifier"]
+        self.max_in_play = data.get("max_in_play", 1)
 
 
     def __str__(self):

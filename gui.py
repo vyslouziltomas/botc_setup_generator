@@ -1,12 +1,13 @@
 import tkinter as tk
-from tkinter import ttk
+from tkinter import ttk, filedialog
 import tkinter.font as tkfont
-from script_loader import pre_loader
+from script_loader import pre_loader, import_script
 from application import application
-
+from character_loader import character_loader
 
 def run_gui():
     pre_loaded_scripts = pre_loader()
+    loaded_characters = character_loader()
 
     script_names = [
         pre_loaded_script["script_name"]
@@ -35,11 +36,13 @@ def run_gui():
         sticky="ew"
     )
 
-    input_frame.columnconfigure(0, weight=1, uniform="input")
-    input_frame.columnconfigure(1, weight=1, uniform="input")
+    input_frame.columnconfigure(0, weight=4, uniform="input")
+    input_frame.columnconfigure(1, weight=6, uniform="input")
 
-    output_frame.columnconfigure(0, weight=1, uniform="output")
-    output_frame.columnconfigure(1, weight=1, uniform="output")
+    output_frame.columnconfigure(0, weight=4, uniform="output")
+    output_frame.columnconfigure(1, weight=5, uniform="output")
+
+    script_frame = tk.Frame(input_frame)
 
     # -------------------------
     # Fonts
@@ -49,27 +52,26 @@ def run_gui():
 
     title_font=default_font.copy()
     title_font.configure(
-        size=20,
+        size=18,
         weight="bold"
     )
 
     heading_font=default_font.copy()
     heading_font.configure(
-        size=15,
+        size=14,
         weight="bold"
     )
 
     text_font=default_font.copy()
     text_font.configure(
-        size=15,
+        size=14,
     )
 
 
     # -------------------------
     # Input section
     # -------------------------
-
-
+    
     title_label = tk.Label(
         input_frame,
         text="BotC Setup Generator",
@@ -93,19 +95,84 @@ def run_gui():
         sticky="e",
     )
 
+    script_frame.grid(
+        row=1,
+        column=1,
+        sticky="we"
+    )
+
     script_combobox = ttk.Combobox(
-        input_frame,
+        script_frame,
         values=script_names,
         state="readonly",
     )
     script_combobox.grid(
-        row=1,
-        column=1,
+        row=0,
+        column=0,
         padx=10,
         pady=10,
         sticky="w",
     )
     script_combobox.current(0)
+
+
+    def import_button_clicked():
+
+        selected_file = filedialog.askopenfilename(
+            title="Vyber script",
+            filetypes=[("JSON soubory", "*.json")]
+        )
+
+        if not selected_file:
+            return
+
+        imported_path, error = import_script(
+            selected_file,
+            loaded_characters
+        )
+
+        if error:
+            error_label.config(text=error)
+            error_label.grid()
+            return
+
+        error_label.grid_remove()
+
+        # Po importu znovu načteme dostupné scripty.
+        updated_scripts = pre_loader()
+
+        updated_script_names = [
+            script["script_name"]
+            for script in updated_scripts
+        ]
+
+        script_combobox.config(
+            values=updated_script_names
+        )
+
+        # Vybereme právě importovaný script.
+        for index, script in enumerate(updated_scripts):
+            if script["script_path"].name == imported_path.name:
+                script_combobox.current(index)
+                break
+
+        # Aktualizujeme seznam, který používá callback Generovat.
+        pre_loaded_scripts.clear()
+        pre_loaded_scripts.extend(updated_scripts)
+
+
+    import_button = ttk.Button(
+        script_frame,
+        text="Importovat script",
+        command=import_button_clicked,
+    )
+
+    import_button.grid(
+        row=0,
+        column=1,
+        padx=(40, 0),
+        pady=10,
+    )
 
 
     players_label = tk.Label(
@@ -314,14 +381,28 @@ def run_gui():
     generated_message_label.grid_remove()
 
 
-
+    error_label = tk.Label(
+        output_frame,
+        text="",
+        font=text_font,
+        fg="red",
+        justify="center"
+    )
+    error_label.grid(
+        row=6,
+        column=0,
+        columnspan=2,
+        sticky="we",
+        pady=10,
+        padx=10,
+    )
+    error_label.grid_remove()
 
     # -------------------------
     # Generate button callback
     # -------------------------
 
     def hide_generated_setup():
-        generated_message_label.grid()
         townsfolk_label.grid_remove()
         generated_townsfolk_label.grid_remove()
         outsiders_label.grid_remove()
@@ -332,17 +413,20 @@ def run_gui():
         generated_demons_label.grid_remove()
         bluffs_label.grid_remove()
         generated_bluffs_label.grid_remove()
+        generated_message_label.grid_remove()
 
     def generate_button_clicked():
         selected_script_name = script_combobox.get()
         try:
             number_of_players = int(players_spinbox.get())
             if not 5 <= number_of_players <= 15:
-                generated_message_label.config(text="Zadejte celé číslo v rozsahu 5 - 15.")
+                error_label.config(text="Zadejte celé číslo v rozsahu 5 - 15.")
+                error_label.grid()
                 hide_generated_setup()
                 return
         except ValueError:
-            generated_message_label.config(text="Zadejte celé číslo v rozsahu 5 - 15.")
+            error_label.config(text="Zadejte celé číslo v rozsahu 5 - 15.")
+            error_label.grid()
             hide_generated_setup()
             return
 
@@ -357,17 +441,24 @@ def run_gui():
         )
 
         if error:
-            generated_message_label.config(text=error)
+            error_label.config(text=error)
+            error_label.grid()
             hide_generated_setup()
             return
+        
+        error_label.grid_remove()
 
 
         townsfolk_text = "\n".join(
             character.name_cs
             for character in generated_setup.teams["townsfolk"]
         )
-        townsfolk_label.grid()
-        generated_townsfolk_label.grid()
+        if townsfolk_text:
+            townsfolk_label.grid()
+            generated_townsfolk_label.grid()
+        else:
+            townsfolk_label.grid_remove()
+            generated_townsfolk_label.grid_remove()
         generated_townsfolk_label.config(text=townsfolk_text)
 
 
@@ -388,8 +479,12 @@ def run_gui():
             character.name_cs
             for character in generated_setup.teams["minions"]
         )
-        minions_label.grid()
-        generated_minions_label.grid()
+        if minions_text:
+            minions_label.grid()
+            generated_minions_label.grid()
+        else:
+            minions_label.grid_remove()
+            generated_minions_label.grid_remove()
         generated_minions_label.config(text=minions_text)
 
 
@@ -397,16 +492,24 @@ def run_gui():
             character.name_cs
             for character in generated_setup.teams["demons"]
         )
-        demons_label.grid()
-        generated_demons_label.grid()
+        if demons_text:
+            demons_label.grid()
+            generated_demons_label.grid()
+        else:
+            demons_label.grid_remove()
+            generated_demons_label.grid_remove()
         generated_demons_label.config(text=demons_text)
 
         bluffs_text = ", ".join(
             character.name_cs
             for character in generated_setup.bluffs
         )
-        bluffs_label.grid()
-        generated_bluffs_label.grid()
+        if bluffs_text:
+            bluffs_label.grid()
+            generated_bluffs_label.grid()
+        else:
+            bluffs_label.grid_remove()
+            generated_bluffs_label.grid_remove()
         generated_bluffs_label.config(text=bluffs_text)
 
         message_text = "\n".join(

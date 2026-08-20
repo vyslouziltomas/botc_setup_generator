@@ -7,14 +7,16 @@ def application(script_path, number_of_players):
 
     loaded_characters = character_loader()
 
-    script = script_loader(script_path, loaded_characters)
+    script, error = script_loader(script_path, loaded_characters)
+
+    if error:
+        return None, error
 
     player_setups = player_count_loader()
 
     player_setup = get_player_count_setup(player_setups, number_of_players)
     if player_setup is None:
-        error = "Pro tento počet hráčů neexistuje nastavení."
-        return None, error
+        return None, "Pro tento počet hráčů neexistuje nastavení."
     
     error = script.validate(player_setup)
     if error:
